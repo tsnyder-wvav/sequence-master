@@ -575,9 +575,14 @@ function startGame(mode){
     player2Time = 30;
 
   }else{
-
     player1Box.classList.add("hidden");
-    player2Box.classList.add("hidden");
+    player2Box.classList.remove("hidden");
+    player2Box.innerHTML = `    <button
+      class="mode-btn big-btn"
+      onclick="location.reload()"
+    >
+      Start Over
+    </button>`;
 
     turnDisplay.classList.add("hidden");
 
